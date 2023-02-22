@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQueue</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+          rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+          integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+<div class="grid page">
+  <header class="flex row">
+    <div class="logo">
+                <span>
+                    AndroProduction
+                </span>
+    </div>
+
+    <button class="nav-btn">+</button>
+    <nav class="hiden">
+      <a href="/main.html">Главная</a>
+      <a href="/QA.html">Обсуждения</a>
+      <a href="/pagetime.html">Время загрузки</a>
+    </nav>
+  </header>
+
+  <main class="flex col">
+    <h1>Актуальные обсуждения</h1>
+    <table id="table">
+      <tr>
+        <th>Тема</th>
+        <th>Описание</th>
+      </tr>
+    </table>
+
+    <form id="form">
+      <label for="topic">Тема</label>
+      <input type="text" name="topic" id="topic">
+      <label for="description">Описание</label>
+      <input type="text" name="description" id="description">
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+  <footer class="flex row">
+    <div class="footer-col flex col">
+      <p class="footer-item">
+        © 2022 AndroProduction, Inc.
+      </p>
+    </div>
+    <div class="footer-col flex col">
+    </div>
+  </footer>
+</div>
+
+<script src="QA-script.js.js"></script>
+<script src="pagetime.js.js"></script>
+</body>
+</html>

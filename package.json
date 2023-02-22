@@ -1,7 +1,7 @@
 {
   "name": "nest-new-project",
   "engines": {
-    "node": ">=18.14.0"
+    "node": "<=18.14.0"
   },
   "version": "0.0.1",
   "description": "",
